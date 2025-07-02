@@ -1,0 +1,62 @@
+{
+  "relacionamento": {
+    "casal": ["Tâmara", "Pimpinho"],
+    "iniciadoEm": "2022-10-08",
+    "status": "em_constante_evolucao",
+    "versaoDoAmor": "2.5",
+    "linguagemDoAmor": ["carinho", "paciência", "churrasquinho", "filmes_em_par", "biritas_juntas"]
+  },
+  "esposo": {
+    "nome": "Rafiou",
+    "apelido": "Pimpinho",
+    "origem": "Togo, África",
+    "idade": 35,
+    "ocupacao": "Desenvolvedor Back-End",
+    "linguagensDeProgramacao": ["Python", "Java"],
+    "habilidades": [
+      "resolver_bugs_da_vida",
+      "cozinhar_com_pimenta",
+      "sorrir_com_os_olhos",
+      "cuidar_com_amor",
+      "ouvir_com_paciencia"
+    ],
+    "preferencias": {
+      "comidaFavorita": "arroz com muito molho de tomate e pimenta",
+      "bebidaPreferida": "cerveja gelada",
+      "programaAFavorito": "filmes e séries de competição com a Tâmara"
+    },
+    "nivelDeFofo": "infinito_mais_um"
+  },
+  "familia": {
+    "filho": {
+      "nome": "Pierre",
+      "idadeMeses": 6,
+      "atividadeFavorita": "crescer, sorrir e ser o orgulho dos pais"
+    },
+    "atividadeFamiliar": [
+      "acompanhar cada passo do Pierre",
+      "rir junto das primeiras gracinhas",
+      "criar memórias em família"
+    ]
+  },
+  "planosFuturos": {
+    "compraDaCasa": true,
+    "destinosDeViagem": ["Disney", "lugares felizes em família"],
+    "metaDeVida": "viver muitos anos se amando, com cumplicidade e alegria"
+  },
+  "sentimentos": {
+    "amor": "maior_do_que_tudo",
+    "gratidão": "infinita",
+    "admiração": true,
+    "orgulho": true,
+    "alegria": "diária"
+  },
+  "recursosCompartilhados": [
+    "risadas",
+    "churrascos",
+    "noites de série",
+    "o amor por Pierre",
+    "sonhos e planos"
+  ],
+  "mensagemFinal": "Meu bem, você é o maior presente que Deus me deu. Eu te amo mais que tudo e espero viver longos anos ao seu lado, sempre te auxiliando em tudo e te fazendo feliz. Hoje é seu dia. Feliz Aniversário!"
+}

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>/getLove</title>
-  <link rel="icon" type="image/x-icon" href="https://favicon.io/favicon-generator/?t=%F0%9F%92%96&ff=Monospace&fs=70&fc=%2300ff88&b=transparent">
+  <link rel="icon" type="image/png" href="https://em-content.zobj.net/thumbs/240/apple/354/sparkling-heart_1f496.png">
   <style>
     body {
       background-color: #1e1e1e;
@@ -34,15 +34,25 @@
   </style>
 </head>
 <body>
+
   <h1>GET /getLove</h1>
+
+  <!-- 🎵 MÚSICA DE FUNDO -->
+  <audio id="bg-music" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mp3">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <button onclick="toggleMusic()">🔊 Tocar música</button>
 
   <pre id="json">Carregando amor...</pre>
 
   <button onclick="mostrarMensagem()">💌 Ver mensagem especial</button>
-  <div id="mensagem" style="display:none; margin-top: 30px;"></div>
+  <div id="mensagem" style="display:none;"></div>
 
   <script src="script.js"></script>
 
+  <!-- 💬 MENSAGEM FINAL ANIMADA -->
   <script>
     const finalMessage = "Meu bem, você é o maior presente que Deus me deu. Eu te amo mais que tudo e espero viver longos anos ao seu lado, sempre te auxiliando em tudo e te fazendo feliz. Hoje é seu dia. Feliz Aniversário!";
     
@@ -60,6 +70,22 @@
       }
       digitar();
     }
+
+    // 🎵 Função para tocar/pausar música
+    const audio = document.getElementById("bg-music");
+    let tocando = false;
+
+    function toggleMusic() {
+      if (tocando) {
+        audio.pause();
+        event.target.textContent = "🔊 Tocar música";
+      } else {
+        audio.play();
+        event.target.textContent = "⏸️ Pausar música";
+      }
+      tocando = !tocando;
+    }
   </script>
+
 </body>
 </html>

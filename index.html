@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>/getLove</title>
+  <link rel="icon" type="image/x-icon" href="https://favicon.io/favicon-generator/?t=%F0%9F%92%96&ff=Monospace&fs=70&fc=%2300ff88&b=transparent">
   <style>
     body {
       background-color: #1e1e1e;
@@ -16,12 +17,49 @@
       border-radius: 5px;
       overflow-x: auto;
     }
+    button {
+      background-color: #00ff88;
+      color: #111;
+      font-family: monospace;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    #typed-message {
+      margin-top: 40px;
+      white-space: pre-wrap;
+    }
   </style>
 </head>
 <body>
   <h1>GET /getLove</h1>
-  <pre id="json"></pre>
+
+  <pre id="json">Carregando amor...</pre>
+
+  <button onclick="mostrarMensagem()">💌 Ver mensagem especial</button>
+  <div id="mensagem" style="display:none; margin-top: 30px;"></div>
 
   <script src="script.js"></script>
+
+  <script>
+    const finalMessage = "Meu bem, você é o maior presente que Deus me deu. Eu te amo mais que tudo e espero viver longos anos ao seu lado, sempre te auxiliando em tudo e te fazendo feliz. Hoje é seu dia. Feliz Aniversário!";
+    
+    function mostrarMensagem() {
+      const el = document.getElementById("mensagem");
+      el.textContent = "";
+      el.style.display = "block";
+      let i = 0;
+      function digitar() {
+        if (i < finalMessage.length) {
+          el.textContent += finalMessage.charAt(i);
+          i++;
+          setTimeout(digitar, 40);
+        }
+      }
+      digitar();
+    }
+  </script>
 </body>
 </html>
